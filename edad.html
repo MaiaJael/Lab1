@@ -1,0 +1,61 @@
+<html>
+    <script>
+        //Así se define una variable.
+        //var number = 0;
+        //Variable de objeto:
+        //var Mascota = {Nombre = "asdfg", Especie = "vampiro"};
+        //Variable de lista, array
+        //var dimension = [1, 2, 3];
+        //Y así se usan los condicionales.
+        //if (number > 18) {alert("Es mayor.")};
+        while (que_hacer != 3) {
+            var que_hacer = prompt ("Menú\n1. Pasar de metros a centimetros.\n2. Mayor o menor de edad.\n3. Terminar.\n¿Qué desea hacer?")
+            if (que_hacer == 1) {
+                var metros = prompt ("Metros: ")
+                var centimetros = metros * 100
+                alert ("Centimetros: " + centimetros)
+            }
+            else{
+                if (que_hacer == 2) {
+                    var edad = prompt ("Ingrese su edad: ")
+                    if (edad < 1) {
+                        alert ("Imposible.")
+                    }
+                    else{
+                        if (edad < 18 & edad > 0) {
+                            alert ("Usted es menor de edad.")
+                        }
+                        else {
+                            if (edad > 17 & edad < 100) {
+                                alert ("Usted es mayor de edad.")
+                            }
+                            else {
+                                if (edad > 99 & edad < 123) {
+                                    alert ("Usted o es una persona muy longeva o me está mintiendo.")
+                                }
+                                else {
+                                    if (edad > 122 & edad < 200) {
+                                        alert ("¡Felicitaciones!\nUsted ha roto el record de longevidad.\nEso, o me está mintiendo...")
+                                    }
+                                    else {
+                                        if (edad > 199) {
+                                            alert ("No le creo...")
+                                        }
+                                        else {
+                                            alert ("Opción no disponible.")
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else {
+                    if (que_hacer != 3) {
+                        alert ("Opción no disponible.")
+                    }
+                }
+            }
+        }
+    </script>
+</html>

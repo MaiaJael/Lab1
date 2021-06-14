@@ -1,0 +1,74 @@
+<html>
+    <script>
+        function convertir() {
+            var MedidaInicial = document.getElementById("Opción1").value;
+            var MedidaFinal = document.getElementById("Opción2").value;
+            if (MedidaInicial == "km"){
+                if (MedidaFinal == "m") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero/1000
+                alert (resultado)
+                }
+                if (MedidaFinal == "cm") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero/100000
+                alert (resultado)
+                }
+            }
+            if (MedidaInicial == "m"){
+                if (MedidaFinal == "km") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero/1000
+                alert (resultado)
+                }
+                if (MedidaFinal == "cm") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero*100
+                alert (resultado)
+                }
+            }
+            if (MedidaInicial == "cm"){
+                if (MedidaFinal == "m") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero/100
+                alert (resultado)
+                }
+                if (MedidaFinal == "km") {
+                    var Numero = document.getElementById("Número1").value;
+                Numero = parseInt(Numero)
+                var resultado = Numero/100000
+                alert (resultado)
+                }
+            }
+        }
+    </script>
+
+    <body>
+        <h2>Conversor de medidas</h2>
+        
+        <label> Pasar </label>
+
+        <select id = "Opción1">
+            <option> km </option>
+            <option> m </option>
+            <option> cm </option>
+        </select>
+
+        <input id = "Número1"/>
+
+        <label> a </label>
+
+        <select id = "Opción2">
+            <option> km </option>
+            <option> m </option>
+            <option> cm </option>  
+        </select>
+        <label> : </label>
+        <button onclick="convertir()" > Convertir </button>
+    </body>
+</html>

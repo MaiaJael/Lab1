@@ -1,0 +1,39 @@
+<html>
+    <script>
+        //Generar dos numeros random, el jugador deberá realizar la suma, si es correcta, sumar 10 puntos, si es incorrecta, restar 5 punto.
+        var puntos = 0;
+        var random1 = 0;
+        var random2 = 0;
+        function generar (){
+            random1 = (Math.random()* (10 - 1));
+            random1 = Math.round(random1);
+            random2 = (Math.random() * (10 - 1));
+            random2 = Math.round(random2);
+            document.getElementById("num1").innerHTML = random1 + " +"
+            document.getElementById("num2").innerHTML = random2 + " = "
+        }
+
+        function corregir (){
+            var respuesta = document.getElementById("suma").value;
+            var resultado = random1 + random2;
+            if (respuesta == resultado) {
+                puntos = puntos + 10;
+                document.getElementById("puntaje").innerHTML = "Puntos: " + puntos
+            }
+            if (respuesta != resultado) {
+                puntos = puntos - 5;
+                document.getElementById("puntaje").innerHTML = "Puntos: " + puntos
+            }
+        }
+    </script>
+    <h2> Ingrese la suma de los siguientes números </h2>
+    <label id = "puntaje"></label>
+    <p></p>
+    <button onclick = "generar()"> Generar números</button>
+    <p></p>
+    <label id = "num1"></label>
+    <label id = "num2"></label>
+    <input id = "suma"/>
+    <button onclick="corregir()"> Corregir </button>
+
+</html>

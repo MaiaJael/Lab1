@@ -1,0 +1,59 @@
+<html>
+    <script>
+        function operar () {
+            var Opciones = document.getElementById("Opciones").value;
+            if (Opciones == "+") {
+                var PrimerNumero = document.getElementById("Número 1").value;
+                PrimerNumero = parseInt(PrimerNumero)
+                var SegundoNumero = document.getElementById("Número 2").value;
+                SegundoNumero = parseInt(SegundoNumero)
+                var suma = PrimerNumero + SegundoNumero
+                alert (suma)
+            }
+            if (Opciones == "-") {
+                var PrimerNumero = document.getElementById("Número 1").value;
+                PrimerNumero = parseInt(PrimerNumero)
+                var SegundoNumero = document.getElementById("Número 2").value;
+                SegundoNumero = parseInt(SegundoNumero)
+                var resta = PrimerNumero - SegundoNumero
+                alert (resta)
+            }
+            if (Opciones == "*") {
+                var PrimerNumero = document.getElementById("Número 1").value;
+                PrimerNumero = parseInt(PrimerNumero)
+                var SegundoNumero = document.getElementById("Número 2").value;
+                SegundoNumero = parseInt(SegundoNumero)
+                var multiplicacion = PrimerNumero * SegundoNumero
+                alert (multiplicacion)
+            }
+            if (Opciones == "/") {
+                var PrimerNumero = document.getElementById("Número 1").value;
+                PrimerNumero = parseInt(PrimerNumero)
+                var SegundoNumero = document.getElementById("Número 2").value;
+                SegundoNumero = parseInt(SegundoNumero)
+                var division = PrimerNumero / SegundoNumero
+                alert (division)
+            }
+        }
+    </script>
+    <body>
+        <h2>Calculadora</h2>
+        
+        <p>Por favor ingrese dos números.</p>
+
+        <input id ="Número 1"/>
+
+        <select id = "Opciones">
+            <option> + </option>
+            <option> - </option>
+            <option> * </option>
+            <option> / </option>
+        </select>
+
+        <input id = "Número 2"/>
+
+
+
+        <button onclick="operar()" > Resultado </button>
+    </body>
+</html>

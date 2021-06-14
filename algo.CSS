@@ -1,0 +1,29 @@
+/*Esto es un fucking comentario, por fin*/
+
+input[type="text"]{
+    border-style: solid;
+    border-color: rgb(18, 8, 63);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formulario{
+    background-color: darkgray;
+    width: 200px;
+    height: 100px;
+    border-color: rgb(8, 5, 49);
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 10;
+    margin-top: 200px;
+    margin-left: 550px;
+    font-family: cursive;
+}
+
+#Form2{
+    background-color: rgba(125, 127, 153, 0.925);
+    width: 200px;
+    margin-top: 15px;
+
+}
